@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail DB Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <body class="homepage" inmaintabuse="1" data-new-gr-c-s-check-loaded="14.1201.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+
+        <style>
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    
+        <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.thecocktaildb.com"><img src="/images/logo.png" alt="logo"></a>
+                </div>
+                    
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="https://www.thecocktaildb.com">Home</a></li>
+                        <li><a href="\api.php">API</a></li>
+                        <li>
+                            <div class="search">
+                                <form role="form" action="/browse/search/">
+                                    <input type="text" name="s" class="search-form" autocomplete="off" placeholder=" Search">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+        <div class="container"></div>
+    
+        <section id="feature">
+    
+            <div class="container">
+                <div class="center">
+    
+                    <table style="width:100%">
+                        <tbody><tr>
+                            <td style="width:20%">
+                                <img src="/images/cocktail_left.png" alt="Pitch Left">
+                            </td>
+                            <td style="width:60%">
+                                <h1>Welcome to TheCocktailDB</h1>
+                                An open, crowd-sourced database of drinks and cocktails from around the world.<br>
+                                We also offer a <a href="/api.php">free cocktail API</a> for anyone wanting to use it.<br>
+                                <center>
+                                    <table>
+                                        <tbody><tr>
+                                            <td width="80">
+                                                <div id="paypal-button-container-P-75803767GD3872726M3PPX4I"><div id="zoid-paypal-buttons-uid_2347ad31cb_mtu6mtq6mtg" class="paypal-buttons paypal-buttons-context-iframe paypal-buttons-label-subscribe paypal-buttons-layout-horizontal" data-paypal-smart-button-version="5.0.461" style="height: 25px; transition: all 0.2s ease-in-out 0s;"><style nonce="">
+                        #zoid-paypal-buttons-uid_2347ad31cb_mtu6mtq6mtg {
+                            position: relative;
+                            display: inline-block;
+                            width: 100%;
+                            min-height: 25px;
+                            min-width: 150px;
+                            font-size: 0;
+                        }
+    
+                        #zoid-paypal-buttons-uid_2347ad31cb_mtu6mtq6mtg > iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+    
+                        #zoid-paypal-buttons-uid_2347ad31cb_mtu6mtq6mtg > iframe.component-frame {
+                            z-index: 100;
+                        }
+    
+                        #zoid-paypal-buttons-uid_2347ad31cb_mtu6mtq6mtg > iframe.prerender-frame {
+                            transition: opacity .2s linear;
+                            z-index: 200;
+                        }
+    
+                        #zoid-paypal-buttons-uid_2347ad31cb_mtu6mtq6mtg > iframe.visible {
+                            opacity: 1;
+                        }
+    
+                        #zoid-paypal-buttons-uid_2347ad31cb_mtu6mtq6mtg > iframe.invisible {
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+    
+                        #zoid-paypal-buttons-uid_2347ad31cb_mtu6mtq6mtg > .smart-menu {
+                            position: absolute;
+                            z-index: 300;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                        }
+                    </style><iframe allowtransparency="true" name="__zoid__paypal_buttons__eyJzZW5kZXIiOnsiZG9tYWluIjoiaHR0cHM6Ly93d3cudGhlY29ja3RhaWxkYi5jb20ifSwibWV0YURhdGEiOnsid2luZG93UmVmIjp7InR5cGUiOiJwYXJlbnQiLCJkaXN0YW5jZSI6MH19LCJyZWZlcmVuY2UiOnsidHlwZSI6InJhdyIsInZhbCI6IntcInVpZFwiOlwiem9pZC1wYXlwYWwtYnV0dG9ucy11aWRfMjM0N2FkMzFjYl9tdHU2bXRxNm10Z1wiLFwiY29udGV4dFwiOlwiaWZyYW1lXCIsXCJ0YWdcIjpcInBheXBhbC1idXR0b25zXCIsXCJjaGlsZERvbWFpbk1hdGNoXCI6e1wiX190eXBlX19cIjpcInJlZ2V4XCIsXCJfX3ZhbF9fXCI6XCJcXFxcLnBheXBhbFxcXFwuKGNvbXxjbikoOlxcXFxkKyk/JFwifSxcInZlcnNpb25cIjpcIjEwXzNfM1wiLFwicHJvcHNcIjp7XCJzdHlsZVwiOntcImxhYmVsXCI6XCJzdWJzY3JpYmVcIixcImxheW91dFwiOlwiaG9yaXpvbnRhbFwiLFwiY29sb3JcIjpcImdvbGRcIixcInNoYXBlXCI6XCJwaWxsXCIsXCJ0YWdsaW5lXCI6dHJ1ZSxcImhlaWdodFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJwZXJpb2RcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwibWVudVBsYWNlbWVudFwiOlwiYmVsb3dcIixcImRpc2FibGVNYXhXaWR0aFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJkaXNhYmxlTWF4SGVpZ2h0XCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImJvcmRlclJhZGl1c1wiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn19LFwiY3JlYXRlU3Vic2NyaXB0aW9uXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfODllZTIwMThiZV9tdHU2bXRxNm10Z1wiLFwibmFtZVwiOlwiY3JlYXRlU3Vic2NyaXB0aW9uXCJ9fSxcIm9uQXBwcm92ZVwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkX2MwYjc3ZGIxY2ZfbXR1Nm10cTZtdGdcIixcIm5hbWVcIjpcIm9uQXBwcm92ZVwifX0sXCJjc3BOb25jZVwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJhbGxvd0JpbGxpbmdQYXltZW50c1wiOnRydWUsXCJhbW91bnRcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiYXBpU3RhZ2VIb3N0XCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImFwcGxlUGF5XCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImFwcGxlUGF5U3VwcG9ydFwiOmZhbHNlLFwiYnJhbmRlZFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJidXR0b25Mb2NhdGlvblwiOlwid3d3LnRoZWNvY2t0YWlsZGIuY29tXCIsXCJidXR0b25TZXNzaW9uSURcIjpcInVpZF80YzE0NjgwYzNjX210dTZtdHE2bXRnXCIsXCJidXR0b25TaXplXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImJ1eWVyQ291bnRyeVwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJjbGllbnRBY2Nlc3NUb2tlblwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJjdXN0b21lcklkXCI6XCJcIixcImNsaWVudElEXCI6XCJBZkhFVllMdnZCRTJrbTNlVFNISndGMkE2VzJZTjNDWkUtLTgwUXlGQzdtOTJOb2I0cmNabHB6TGotaGZjVlFHRXlCd1FvbWJ3cmFMT2FFYlwiLFwiY2xpZW50TWV0YWRhdGFJRFwiOlwidWlkXzdkYWU0OWI2ZWRfbXR1Nm10cTZtdGdcIixcImNvbW1pdFwiOnRydWUsXCJjb21wb25lbnRzXCI6W1wiYnV0dG9uc1wiXSxcImNyZWF0ZUJpbGxpbmdBZ3JlZW1lbnRcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiY3JlYXRlT3JkZXJcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiY3JlYXRlVmF1bHRTZXR1cFRva2VuXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImNzcFwiOntcIm5vbmNlXCI6XCJcIn0sXCJjdXJyZW5jeVwiOlwiVVNEXCIsXCJkZWJ1Z1wiOmZhbHNlLFwiZGlzYWJsZUNhcmRcIjpbXSxcImRpc2FibGVGdW5kaW5nXCI6W10sXCJkaXNhYmxlU2V0Q29va2llXCI6dHJ1ZSxcImRpc3BsYXlPbmx5XCI6W10sXCJlbmFibGVGdW5kaW5nXCI6W10sXCJlbmFibGVUaHJlZURvbWFpblNlY3VyZVwiOmZhbHNlLFwiZW5hYmxlVmF1bHRcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiZW52XCI6XCJwcm9kdWN0aW9uXCIsXCJleHBlcmltZW50XCI6e1wiZW5hYmxlVmVubW9cIjpmYWxzZSxcInZlbm1vVmF1bHRXaXRob3V0UHVyY2hhc2VcIjpmYWxzZSxcInZlbm1vV2ViRW5hYmxlZFwiOmZhbHNlfSxcImV4cGVyaW1lbnRhdGlvblwiOnt9LFwiZmxvd1wiOlwic3Vic2NyaXB0aW9uX3NldHVwXCIsXCJmdW5kaW5nRWxpZ2liaWxpdHlcIjp7XCJwYXlwYWxcIjp7XCJlbGlnaWJsZVwiOnRydWUsXCJ2YXVsdGFibGVcIjpmYWxzZX0sXCJwYXlsYXRlclwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJ2YXVsdGFibGVcIjpmYWxzZSxcInByb2R1Y3RzXCI6e1wicGF5SW4zXCI6e1wiZWxpZ2libGVcIjpmYWxzZSxcInZhcmlhbnRcIjpudWxsfSxcInBheUluNFwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJ2YXJpYW50XCI6bnVsbH0sXCJwYXlsYXRlclwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJ2YXJpYW50XCI6bnVsbH19fSxcImNhcmRcIjp7XCJlbGlnaWJsZVwiOnRydWUsXCJicmFuZGVkXCI6dHJ1ZSxcImluc3RhbGxtZW50c1wiOmZhbHNlLFwidmVuZG9yc1wiOntcInZpc2FcIjp7XCJlbGlnaWJsZVwiOnRydWUsXCJ2YXVsdGFibGVcIjp0cnVlfSxcIm1hc3RlcmNhcmRcIjp7XCJlbGlnaWJsZVwiOnRydWUsXCJ2YXVsdGFibGVcIjp0cnVlfSxcImFtZXhcIjp7XCJlbGlnaWJsZVwiOnRydWUsXCJ2YXVsdGFibGVcIjp0cnVlfSxcImRpc2NvdmVyXCI6e1wiZWxpZ2libGVcIjp0cnVlLFwidmF1bHRhYmxlXCI6dHJ1ZX0sXCJoaXBlclwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJ2YXVsdGFibGVcIjpmYWxzZX0sXCJlbG9cIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwidmF1bHRhYmxlXCI6dHJ1ZX0sXCJqY2JcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwidmF1bHRhYmxlXCI6dHJ1ZX0sXCJtYWVzdHJvXCI6e1wiZWxpZ2libGVcIjp0cnVlLFwidmF1bHRhYmxlXCI6dHJ1ZX0sXCJkaW5lcnNcIjp7XCJlbGlnaWJsZVwiOnRydWUsXCJ2YXVsdGFibGVcIjp0cnVlfSxcImN1cFwiOntcImVsaWdpYmxlXCI6dHJ1ZSxcInZhdWx0YWJsZVwiOnRydWV9fSxcImd1ZXN0RW5hYmxlZFwiOmZhbHNlfSxcInZlbm1vXCI6e1wiZWxpZ2libGVcIjpmYWxzZSxcInZhdWx0YWJsZVwiOmZhbHNlfSxcIml0YXVcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImNyZWRpdFwiOntcImVsaWdpYmxlXCI6dHJ1ZX0sXCJhcHBsZXBheVwiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwic2VwYVwiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwiaWRlYWxcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImJhbmNvbnRhY3RcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImdpcm9wYXlcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImVwc1wiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwic29mb3J0XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJteWJhbmtcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcInAyNFwiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwid2VjaGF0cGF5XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJwYXl1XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJibGlrXCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJ0cnVzdGx5XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJveHhvXCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJib2xldG9cIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImJvbGV0b2JhbmNhcmlvXCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJtZXJjYWRvcGFnb1wiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwibXVsdGliYW5jb1wiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwic2F0aXNwYXlcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcInBhaWR5XCI6e1wiZWxpZ2libGVcIjpmYWxzZX19LFwiZnVuZGluZ1NvdXJjZVwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJnZXRQYWdlVXJsXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfMjYxNzVhNThiZV9tdHU2bXRxNm10Z1wiLFwibmFtZVwiOlwiZ2V0UGFnZVVybFwifX0sXCJnZXRQb3B1cEJyaWRnZVwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkX2NjNjFlYjE5YmNfbXR1Nm10cTZtdGdcIixcIm5hbWVcIjpcImdldFBvcHVwQnJpZGdlXCJ9fSxcImdldFByZXJlbmRlckRldGFpbHNcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF9kYTExOTlkNWU5X210dTZtdHE2bXRnXCIsXCJuYW1lXCI6XCJnZXRQcmVyZW5kZXJEZXRhaWxzXCJ9fSxcImdldFF1ZXJpZWRFbGlnaWJsZUZ1bmRpbmdcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8xYzE4NmNlY2Y2X210dTZtdHE2bXRnXCIsXCJuYW1lXCI6XCJnZXRRdWVyaWVkRWxpZ2libGVGdW5kaW5nXCJ9fSxcImhvc3RlZEJ1dHRvbklkXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImludGVudFwiOlwic3Vic2NyaXB0aW9uXCIsXCJqc1Nka0xpYnJhcnlcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwibG9jYWxlXCI6e1wiY291bnRyeVwiOlwiVVNcIixcImxhbmdcIjpcImVuXCJ9LFwibWVyY2hhbnRJRFwiOltdLFwibWVyY2hhbnRSZXF1ZXN0ZWRQb3B1cHNEaXNhYmxlZFwiOmZhbHNlLFwibWVzc2FnZVwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJub25jZVwiOlwiXCIsXCJvbkNhbmNlbFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJvbkNsaWNrXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcIm9uQ29tcGxldGVcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwib25Jbml0XCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfZDIxN2E4YjQ0OV9tdHU2bXRxNm10Z1wiLFwibmFtZVwiOlwib25Jbml0XCJ9fSxcIm9uTWVzc2FnZUNsaWNrXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfMDkwMzg5MmZiMl9tdHU2bXRxNm10Z1wiLFwibmFtZVwiOlwib25NZXNzYWdlQ2xpY2tcIn19LFwib25NZXNzYWdlSG92ZXJcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF9jMDg5MDc4MDAwX210dTZtdHE2bXRnXCIsXCJuYW1lXCI6XCJvbk1lc3NhZ2VIb3ZlclwifX0sXCJvbk1lc3NhZ2VSZWFkeVwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzAwNGUyYTY0MGNfbXR1Nm10cTZtdGdcIixcIm5hbWVcIjpcIm9uTWVzc2FnZVJlYWR5XCJ9fSxcIm9uU2hpcHBpbmdBZGRyZXNzQ2hhbmdlXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcIm9uU2hpcHBpbmdDaGFuZ2VcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwib25TaGlwcGluZ09wdGlvbnNDaGFuZ2VcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiaGFzU2hpcHBpbmdDYWxsYmFja1wiOmZhbHNlLFwicGFnZVR5cGVcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwicGFydG5lckF0dHJpYnV0aW9uSURcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwicGF5bWVudE1ldGhvZE5vbmNlXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcInBheW1lbnRNZXRob2RUb2tlblwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJwYXltZW50UmVxdWVzdFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJwbGF0Zm9ybVwiOlwiZGVza3RvcFwiLFwicmVmZXJyZXJEb21haW5cIjpcInd3dy50aGVjb2NrdGFpbGRiLmNvbVwiLFwicmVtZW1iZXJcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF9iZjQ3NGE2NGJkX210dTZtdHE2bXRnXCIsXCJuYW1lXCI6XCJyZW1lbWJlclwifX0sXCJyZW1lbWJlcmVkXCI6W10sXCJyZW5kZXJlZEJ1dHRvbnNcIjpbXCJwYXlwYWxcIixcImNyZWRpdFwiXSxcInNlc3Npb25JRFwiOlwidWlkXzdkYWU0OWI2ZWRfbXR1Nm10cTZtdGdcIixcInNka0NvcnJlbGF0aW9uSURcIjpcImY2MjU2NDEzZGM2NDhcIixcInNlc3Npb25TdGF0ZVwiOntcImdldFwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkX2E4ZTc1MTA5YTdfbXR1Nm10cTZtdGdcIixcIm5hbWVcIjpcImdldFwifX0sXCJzZXRcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF9jODk3M2JmMzVjX210dTZtdHE2bXRnXCIsXCJuYW1lXCI6XCJzZXRcIn19fSxcImdldFNob3BwZXJJbnNpZ2h0c1VzZWRcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8wNDcyMTA4ZmYzX210dTZtdHE2bXRnXCIsXCJuYW1lXCI6XCJDclwifX0sXCJzdGFnZUhvc3RcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwic3RvcmFnZUlEXCI6XCJ1aWRfZWEyMDIyMWFkMF9tdGk2bXp1Nm5ka1wiLFwic3RvcmFnZVN0YXRlXCI6e1wiZ2V0XCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfZGUxZDg2ZTgwMV9tdHU2bXRxNm10Z1wiLFwibmFtZVwiOlwiZ2V0XCJ9fSxcInNldFwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkX2U4YWQ5ZjRlMzhfbXR1Nm10cTZtdGdcIixcIm5hbWVcIjpcInNldFwifX19LFwic3VwcG9ydGVkTmF0aXZlQnJvd3NlclwiOmZhbHNlLFwic3VwcG9ydHNQb3B1cHNcIjp0cnVlLFwidGVzdFwiOntcImFjdGlvblwiOlwiY2hlY2tvdXRcIn0sXCJ1c2VyRXhwZXJpZW5jZUZsb3dcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwidXNlcklEVG9rZW5cIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwidmF1bHRcIjp0cnVlLFwid2FsbGV0XCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifX0sXCJleHBvcnRzXCI6e1wiaW5pdFwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzg2ZWYwNDI4OGVfbXR1Nm10cTZtdGdcIixcIm5hbWVcIjpcImluaXRcIn19LFwiY2xvc2VcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8xNDE3MzI0ZWJhX210dTZtdHE2bXRnXCIsXCJuYW1lXCI6XCJjbG9zZTo6bWVtb2l6ZWRcIn19LFwiY2hlY2tDbG9zZVwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzcwMjQ5MDFmNWFfbXR1Nm10cTZtdGdcIixcIm5hbWVcIjpcImNoZWNrQ2xvc2VcIn19LFwicmVzaXplXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfNmU2ZTJiZmYxN19tdHU2bXRxNm10Z1wiLFwibmFtZVwiOlwiX25cIn19LFwib25FcnJvclwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzYzYjAxNzVjNTlfbXR1Nm10cTZtdGdcIixcIm5hbWVcIjpcInFuXCJ9fSxcInNob3dcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF82Njg2NWExMDc2X210dTZtdHE2bXRnXCIsXCJuYW1lXCI6XCJnblwifX0sXCJoaWRlXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfNGVmMzEyOTc4YV9tdHU2bXRxNm10Z1wiLFwibmFtZVwiOlwidm5cIn19LFwiZXhwb3J0XCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfOTNhYzc2MTcwOV9tdHU2bXRxNm10Z1wiLFwibmFtZVwiOlwiV25cIn19fX0ifX0__" title="PayPal" allowpaymentrequest="allowpaymentrequest" scrolling="no" id="jsx-iframe-bbd4eb7fba" class="component-frame visible" style="background-color: transparent; border: none;"></iframe><div id="smart-menu" class="smart-menu"></div><div id="installments-modal" class="installments-modal"></div><iframe name="__detect_close_uid_b16b0bfdb6_mtu6mtq6mtk__" style="display: none;"></iframe></div></div>
+                                                <script src="https://www.paypal.com/sdk/js?client-id=AfHEVYLvvBE2km3eTSHJwF2A6W2YN3CZE--80QyFC7m92Nob4rcZlpzLj-hfcVQGEyBwQombwraLOaEb&amp;vault=true&amp;intent=subscription" data-sdk-integration-source="button-factory" data-uid-auto="uid_mjhnbdvtjqseghzieuoeabthzjrlbg"></script>
+                                                <script>
+                                                    paypal.Buttons({
+                                                        style: {
+                                                            shape: 'pill',
+                                                            color: 'gold',
+                                                            layout: 'horizontal',
+                                                            label: 'subscribe'
+                                                        },
+                                                        createSubscription: function(data, actions) {
+                                                            return actions.subscription.create({
+                                                                /* Creates the subscription */
+                                                                plan_id: 'P-75803767GD3872726M3PPX4I'
+                                                            });
+                                                        },
+                                                        onApprove: function(data, actions) {
+                                                            alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                                                        }
+                                                    }).render('#paypal-button-container-P-75803767GD3872726M3PPX4I'); // Renders the PayPal button
+                                                </script>
+    
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    Click button above to upgrade free cocktail API to premium.<br>$3 a month and cancel anytime.
+                                    Currently 314 supporters.<br><br>
+                                </center>
+    
+                            </td>
+                            <td style="width:20%">
+                                <img src="/images/cocktail_right.png" alt="Pitch Right">
+                            </td>
+                        </tr>
+                    </tbody></table>
+    
+    
+    
+                    <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+    
+                    <table width="350" align="center">
+                        <tbody><tr>
+                            <td>
+                                <form class="navbar-form" action="/browse/search/" autocomplete="off">
+                                    <div class="input-group">
+                                        <input type="text" name="s" class="form-control" autocomplete="off" placeholder="Search for a Cocktail...">
+                                        <div class="input-group-btn">
+                                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <img src="images/icons/cocktail-logo.png"> <b>Total Drinks: </b> 636<img src="images/transparent.png" width="10" height="1"><img src="images/icons/ingredient-logo.png"> <b>Total Ingredients: </b>489<img src="images/transparent.png" width="10" height="1"><img src="images/icons/image2.png"> <b>Drink Images: </b>636(93cc)
+                </div>
+                <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+            </div>
+            <div class="container">
+                <div class="center">
+                    <h3>Popular Drinks</h3>
+                    <div class="row"><div class="col-sm-3"><a href="/drink/11000-Mojito-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg" width="95%"></div>Mojito</a><br><br></div><div class="col-sm-3"><a href="/drink/11001-Old-Fashioned-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg" width="95%"></div>Old Fashioned</a><br><br></div><div class="col-sm-3"><a href="/drink/11002-Long-Island-Tea-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg" width="95%"></div>Long Island Tea</a><br><br></div><div class="col-sm-3"><a href="/drink/11003-Negroni-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg" width="95%"></div>Negroni</a><br><br></div></div><div class="row"><div class="col-sm-3"><a href="/drink/11004-Whiskey-Sour-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg" width="95%"></div>Whiskey Sour</a><br><br></div><div class="col-sm-3"><a href="/drink/11005-Dry-Martini-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg" width="95%"></div>Dry Martini</a><br><br></div><div class="col-sm-3"><a href="/drink/11006-Daiquiri-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg" width="95%"></div>Daiquiri</a><br><br></div><div class="col-sm-3"><a href="/drink/11007-Margarita-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" width="95%"></div>Margarita</a><br><br></div>			</div>
+                <br><br>
+                <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+    
+                <h3>Popular Ingredients</h3>
+                <div class="row"><div class="col-sm-3">
+                            <a href="ingredient/1-Vodka">
+                            <figure>						
+                            <img src="/images/ingredients/Vodka.png" width="95%">
+                            <figcaption><br>Vodka</figcaption>
+                            </figure>
+                        </a></div><div class="col-sm-3">
+                            <a href="ingredient/2-Gin">
+                            <figure>						
+                            <img src="/images/ingredients/Gin.png" width="95%">
+                            <figcaption><br>Gin</figcaption>
+                            </figure>
+                        </a></div><div class="col-sm-3">
+                            <a href="ingredient/3-Rum">
+                            <figure>						
+                            <img src="/images/ingredients/Rum.png" width="95%">
+                            <figcaption><br>Rum</figcaption>
+                            </figure>
+                        </a></div><div class="col-sm-3">
+                            <a href="ingredient/4-Tequila">
+                            <figure>						
+                            <img src="/images/ingredients/Tequila.png" width="95%">
+                            <figcaption><br>Tequila</figcaption>
+                            </figure>
+                        </a></div>		</div>
+            <br>
+            <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+    
+            <h3>Latest Drinks</h3>
+            <div class="row"><div class="col-sm-3"><a href="/drink/178371-Old-Cuban-Cocktail"><img src="https://www.thecocktaildb.com/images/media/drink/eo8gfx1699022995.jpg" width="95%">Old Cuban</a><br><br></div><div class="col-sm-3"><a href="/drink/178370-Mauresque-Cocktail"><img src="https://www.thecocktaildb.com/images/media/drink/duwfa11686236556.jpg" width="95%">Mauresque</a><br><br></div><div class="col-sm-3"><a href="/drink/178369-Cocktail-Horse’s-Neck-Cocktail"><img src="https://www.thecocktaildb.com/images/media/drink/4vobt21643844913.jpg" width="95%">Cocktail Horse’s Neck</a><br><br></div><div class="col-sm-3"><a href="/drink/178368-Planter’s-Punch-Cocktail"><img src="https://www.thecocktaildb.com/images/media/drink/jn6o251643844541.jpg" width="95%">Planter’s Punch</a><br><br></div></div><div class="row"><div class="col-sm-3"><a href="/drink/178367-Ramos-Gin-Fizz-Cocktail"><img src="https://www.thecocktaildb.com/images/media/drink/967t911643844053.jpg" width="95%">Ramos Gin Fizz</a><br><br></div><div class="col-sm-3"><a href="/drink/178366-Gin-Lemon-Cocktail"><img src="https://www.thecocktaildb.com/images/media/drink/6gdohq1681212476.jpg" width="95%">Gin Lemon</a><br><br></div><div class="col-sm-3"><a href="/drink/178365-Gin-Tonic-Cocktail"><img src="https://www.thecocktaildb.com/images/media/drink/qcgz0t1643821443.jpg" width="95%">Gin Tonic</a><br><br></div><div class="col-sm-3"><a href="/drink/178364-Vodka-Tonic-Cocktail"><img src="https://www.thecocktaildb.com/images/media/drink/9koz3f1643821062.jpg" width="95%">Vodka Tonic</a><br><br></div>		</div>
+            <br><br>
+    
+            <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+    
+            <div class="center">
+                <h3>Random Ingredients</h3>
+                <div class="row"><div class="col-sm-3">
+                            <a href="/ingredient/441-Sarsaparilla">
+                            <figure>						
+                            <img src="/images/ingredients/Sarsaparilla.png" width="95%">
+                            <figcaption><br>Sarsaparilla</figcaption>
+                            </figure>
+                        </a></div><div class="col-sm-3">
+                            <a href="/ingredient/103-Cherry-Heering">
+                            <figure>						
+                            <img src="/images/ingredients/Cherry Heering.png" width="95%">
+                            <figcaption><br>Cherry Heering</figcaption>
+                            </figure>
+                        </a></div><div class="col-sm-3">
+                            <a href="/ingredient/338-Mountain-Dew">
+                            <figure>						
+                            <img src="/images/ingredients/Mountain Dew.png" width="95%">
+                            <figcaption><br>Mountain Dew</figcaption>
+                            </figure>
+                        </a></div><div class="col-sm-3">
+                            <a href="/ingredient/558-Nocino">
+                            <figure>						
+                            <img src="/images/ingredients/Nocino.png" width="95%">
+                            <figcaption><br>Nocino</figcaption>
+                            </figure>
+                        </a></div>		</div>
+            <br><br>
+            <img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+            </div>
+    
+            <h3>Random Drinks</h3>
+            <div class="row"><div class="col-sm-3"><a href="/drink/11224-Casino-Royale-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/3qpv121504366699.jpg" width="95%"></div>Casino Royale</a><br><br></div><div class="col-sm-3"><a href="/drink/14956-Jello-shots-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/l0smzo1504884904.jpg" width="95%"></div>Jello shots</a><br><br></div><div class="col-sm-3"><a href="/drink/17074-Arizona-Twister-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/ido1j01493068134.jpg" width="95%"></div>Arizona Twister</a><br><br></div><div class="col-sm-3"><a href="/drink/178341-Orange-Rosemary-Collins-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/mokcas1604179977.jpg" width="95%"></div>Orange Rosemary Collins</a><br><br></div></div><div class="row"><div class="col-sm-3"><a href="/drink/11129-Boston-Sour-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/kxlgbi1504366100.jpg" width="95%"></div>Boston Sour</a><br><br></div><div class="col-sm-3"><a href="/drink/15082-Royal-Flush-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/7rnm8u1504888527.jpg" width="95%"></div>Royal Flush</a><br><br></div><div class="col-sm-3"><a href="/drink/13825-Midnight-Manx-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/uqqurp1441208231.jpg" width="95%"></div>Midnight Manx</a><br><br></div><div class="col-sm-3"><a href="/drink/17829-Penicillin-Cocktail"><div><img src="https://www.thecocktaildb.com/images/media/drink/hc9b1a1521853096.jpg" width="95%"></div>Penicillin</a><br><br></div>		<img src="/images/separator.jpg" style="width: 100%; object-fit: contain"><br>
+    
+            <br>
+            <h3> Browse By Name<br></h3>
+            <h2>
+                <a href="/browse/letter/a">A</a> / <a href="/browse/letter/b">B</a> / <a href="/browse/letter/c">C</a> / <a href="/browse/letter/d">D</a> / <a href="/browse/letter/e">E</a> / <a href="/browse/letter/f">F</a> / <a href="/browse/letter/g">G</a> / <a href="/browse/letter/h">H</a> / <a href="/browse/letter/i">I</a> / <a href="/browse/letter/j">J</a> / <a href="/browse/letter/k">K</a> / <a href="/browse/letter/l">L</a> / <a href="/browse/letter/m">M</a> / <a href="/browse/letter/n">N</a> / <a href="/browse/letter/o">O</a> / <a href="/browse/letter/p">P</a> / <a href="/browse/letter/q">Q</a> / <a href="/browse/letter/r">R</a> / <a href="/browse/letter/s">S</a> / <a href="/browse/letter/t">T</a> / <a href="/browse/letter/u">U</a> / <a href="/browse/letter/v">V</a> / <a href="/browse/letter/w">W</a> / <a href="/browse/letter/x">X</a> / <a href="/browse/letter/y">Y</a> / <a href="/browse/letter/z">Z</a>		</h2>
+            </div>
+            </div><!--/.container-->
+        </div></section><!--/#feature-->
+    
+        <footer id="footer" class="midnight-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        © 2024 TheCocktailDB. <br>Proudly built in the UK <img src="/images/icons/flags/big/16/gb.png">
+                    </div>
+                    <div class="col-sm-6">
+                        <center>
+                        Socials: 
+                            <a href="https://www.facebook.com/TheDataDB/"><img src="/images/facebook_icon.png"></a> 
+                            <a href="https://twitter.com/TheAudioDB"><img src="/images/twitter_icon.png"></a>
+                            <a href="https://discord.com/invite/pFvgaXV"><img src="/images/discord_icon.png"></a><br><br>
+                            <a href="https://www.thesportsdb.com" target="_blank"><img src="/images/logo-tsdb.png" alt="logo"></a>
+                            <a href="https://www.theaudiodb.com" target="_blank"><img src="/images/logo-tadb.png" alt="logo"></a>
+                            <a href="https://www.themealdb.com" target="_blank"><img src="/images/logo-tmdb.png" alt="logo"></a>
+                        </center>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="pull-right">
+                            <li><a href="/missing.php">Missing</a></li>
+                            <li><a href="/about.php">About</a></li>
+                            <li><a href="/faq.php">Faq</a></li>
+                            <li><a href="/contact.php">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->    <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.prettyPhoto.js"></script>
+        <script src="../js/jquery.isotope.min.js"></script>
+        <script src="../js/main.js"></script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8d413ca9c922bc22&quot;,&quot;version&quot;:&quot;2024.10.1&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;e3db36df987945a696a3b7cfdfba9eaa&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+    
+    
+    <script src="chrome-extension://igkkmokkmlbkkgdnkkancbonkbbmkioc/sm.bundle.js" data-pname="recorder-screenshot-v3" data-asset-path="https://apv3.s3.ap-northeast-2.amazonaws.com"></script><div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div><iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div><div style="display: none" class="ubey-RecordingScreen-count-down ubey-RecordingScreen-count-down-container">
+              <style>
+                  .ubey-RecordingScreen-count-down-container {
+                      position: fixed;
+                      height: 100vh;
+                      width: 100vw;
+                      top: 0;
+                      left: 0;
+                      z-index: 9999999999999;
+                      background-color: rgba(0, 0, 0, 0.2);
+                  }
+          
+                  .ubey-RecordingScreen-count-down-content {
+                      position: absolute;
+                      display: flex;
+                      top: 50%;
+                      left: 50%;
+                      justify-content: center;
+                      align-items: center;
+                      color: white;
+                      height: 15em;
+                      width: 15em;
+                      transform: translate(-50%, -100%);
+                      background-color: rgba(0, 0, 0, 0.6);
+                      border-radius: 50%;
+                  }
+          
+                  #ubey-RecordingScreen-count-count {
+                      font-size: 14em;
+                      transform: translateY(-2%);
+                  }
+              </style>
+              <div class="ubey-RecordingScreen-count-down-content">
+                  <span id="ubey-RecordingScreen-count-count"></span>
+              </div>
+          </div></body>
+    <h1>Cocktail Database</h1>
+    <input type="text" id="search-bar" placeholder="Search for cocktails...">
+    <div class="container" id="cocktail-container">
+        <!-- Cocktail cards will be dynamically added here -->
+    </div>
+
+    <!-- Modal for detailed cocktail information -->
+    <div id="cocktail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" alt="Cocktail Image">
+            <p id="modal-details"></p>
+            <style>
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            </style>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

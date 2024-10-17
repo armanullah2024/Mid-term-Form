@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+        <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:border-blue-500 focus:ring-blue-500">
+            </div>
+            <label for="faher">Father's Name</label>
+            <input id="father" type="text" placeholder="Enter Father Name" required/>
+            <br/> <br/>
+            <label for="mother">Mother's Name </label>
+            <input id="mother"type="text"placeholder="Enter Mother Name"/>
+            <br/><br/>
+            <Label for="email">Email </Label>
+            <input id="email" type="email" placeholder="tast@easttest.com"required/>
+            <br/> <br/>
+            <label for="contact">Contact No </label>
+            <input id="contact" type="contact" placeholder="008801857017782" required/>
+            <br/> <br/>
+            <label for="data-gr-ext-installed">Reservation Date</label>
+            <input id="contact" type="date" placeholder="00/00/0000" required/>
+            <br/> <br/>
+            <label for="times">Reservation Time</label>
+            <input id="times" type="time" placeholder="12:00" required/>
+            <br/> <br/>
+            <label for="address">Location </label>
+            <input id="address"type="address"placeholder="e.g :P.O:, P.S:, District"/>
+            <br/><br/>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:border-blue-500 focus:ring-blue-500">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:border-blue-500 focus:ring-blue-500" rows="4"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
